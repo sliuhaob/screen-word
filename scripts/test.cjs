@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),{spawnSync}=require('node:child_process');
+const root=path.resolve(__dirname,'..'),out=path.join(root,'.qa');
+fs.mkdirSync(out,{recursive:true});
+const files=['test-core.cjs','test-new-features.cjs','test-inflections.cjs','test-ocr.cjs'];
+const r=spawnSync(process.execPath,['--test',...files.map(f=>path.join(root,f))],{cwd:root,encoding:'utf8',windowsHide:true,timeout:120000,maxBuffer:4*1024*1024});
+const output=(r.stdout||'')+(r.stderr||'');
+fs.writeFileSync(path.join(out,'core.log'),output);
+fs.writeFileSync(path.join(out,'core.json'),JSON.stringify({passed:r.status===0,passedCount:Number(output.match(/(?:ℹ|#) pass (\d+)/)?.[1]||0)},null,2));
+console.log(output);process.exitCode=r.status??1;

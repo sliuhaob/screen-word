@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self';">
+  <title>屏幕取词</title>
+  <link rel="stylesheet" href="overlay.css">
+</head>
+<body>
+  <main id="surface" aria-label="屏幕取词层" hidden>
+    <div class="toolbar"><strong id="frameStatus">正在识别…</strong><button id="cancelButton" type="button">退出 · Esc</button></div>
+    <div id="wordLayer"></div>
+    <aside id="definitionCard" hidden aria-live="polite">
+      <header>
+        <div class="entry">
+          <label for="lookupWord">单词或词组 · 可修改识别结果</label>
+          <input id="lookupWord" type="text" maxlength="96" autocomplete="off" spellcheck="false">
+          <span id="phonetic"></span>
+          <small id="formNote" hidden></small>
+        </div>
+        <button id="closeCardButton" type="button" aria-label="关闭释义">×</button>
+      </header>
+      <div id="definitionBody"></div>
+    </aside>
+  </main>
+  <script src="frame-layout.js"></script>
+  <script src="overlay.js"></script>
+</body>
+</html>

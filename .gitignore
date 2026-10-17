@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.qa/
+qa-fixtures/
+*-profile/
+settings-test-*/
+native/*.exe
+/*.exe
+/*.png
+/*.log
+/*-test-result.json
+/ui-check-progress.log
+/SHA256SUMS
+/使用说明.txt
+/.release-notes.md

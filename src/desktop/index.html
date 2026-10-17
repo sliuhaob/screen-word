@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self';">
+  <title>屏幕取词</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header class="brand"><h1>屏幕取词</h1></header>
+  <section class="panel monitor-panel" aria-labelledby="monitorTitle">
+    <div class="section-head"><h2 id="monitorTitle">按键取词</h2><button id="toggleButton" class="primary" disabled>启用取词</button></div>
+    <p id="status" role="status">取词键尚未启用</p>
+    <div class="binding-row"><label for="bindingType">取词键</label><select id="bindingType"><option value="XBUTTON1">鼠标后退侧键</option><option value="XBUTTON2">鼠标前进侧键</option><option value="MIDDLE">鼠标中键</option><option value="keyboard">键盘快捷键</option></select><button id="saveBinding" class="secondary" disabled>保存绑定</button></div>
+    <div id="keyboardControls" class="keyboard-row" hidden><input id="keyDisplay" readonly aria-label="待保存的键盘快捷键" placeholder="例如 Ctrl+Alt+D 或 F8"><button id="recordKey" class="secondary">录入按键</button></div>
+    <p id="bindingMessage" class="hint" role="status">当前：鼠标后退侧键</p>
+  </section>
+  <section class="search-section" aria-labelledby="searchTitle">
+    <div class="section-head"><h2 id="searchTitle">搜索查词</h2></div>
+    <form id="searchForm" autocomplete="off"><div class="search-controls"><div class="search-input-wrap"><input id="searchInput" type="text" maxlength="200" placeholder="输入英文单词或词组…" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="suggestions" aria-label="搜索英文单词或词组"><ul id="suggestions" role="listbox" hidden></ul></div><button class="primary" type="submit">查词</button></div></form>
+    <div id="searchResult" class="panel result" aria-live="polite" hidden></div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body></html>

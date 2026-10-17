@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.sqlite binary
+*.png binary
+*.exe binary
+resources/verb-inflections.json -text

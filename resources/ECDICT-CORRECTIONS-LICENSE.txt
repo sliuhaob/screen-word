@@ -1,0 +1,23 @@
+ECDICT Revised — corrections and attribution
+
+The base ECDICT material retains the MIT license and copyright notice in
+ECDICT-LICENSE.txt (Copyright (c) 2025 Linwei).
+
+Newly written Chinese corrections, editorial supplements, usage and domain
+labels, sense separation and corrected inflection links are distributed under
+Creative Commons Attribution-ShareAlike 4.0 International:
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Attribution: ECDICT Revised contributors
+Project: https://github.com/sliuhaob/ecdict-revised
+Retain the attribution, license and change indications when sharing adapted
+material. Dictionary attribution is documented in NOTICE.md and the
+article-level ECDICT-SUPPLEMENT-SOURCES.json index.
+
+Open English WordNet contributors (CC BY 4.0), Princeton University WordNet
+(WORDNET-LICENSE.txt), Wiktionary and Wikipedia contributors (CC BY-SA), MDN
+contributors (CC BY-SA) and Robyn Speer / wordfreq retain their respective
+attributions and licenses. Links and contributor references are in NOTICE.md.
+
+Changes represented in this dataset include Chinese sense additions, wording
+and part-of-speech corrections, separated meanings and inflection mappings.

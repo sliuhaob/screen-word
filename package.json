@@ -1,0 +1,33 @@
+{
+  "name": "screen-word",
+  "version": "1.0.0",
+  "description": "Windows 离线屏幕取词与英汉查词工具",
+  "author": "sliuhaob",
+  "license": "MIT",
+  "private": true,
+  "main": "src/electron/main.cjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sliuhaob/screen-word.git"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "prestart": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-mouse-hook.ps1",
+    "start": "electron .",
+    "build": "node scripts/build.cjs",
+    "test": "node scripts/test.cjs",
+    "test:app": "node scripts/test-app.cjs",
+    "verify": "node scripts/verify.cjs"
+  },
+  "dependencies": {
+    "@tesseract.js-data/eng": "1.0.0",
+    "tesseract.js": "7.0.0"
+  },
+  "devDependencies": {
+    "@electron/asar": "3.4.1",
+    "electron": "43.3.0",
+    "electron-builder": "26.15.3"
+  }
+}

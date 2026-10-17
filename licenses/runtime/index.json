@@ -1,0 +1,108 @@
+[
+  {
+    "name": "@tesseract.js-data/eng",
+    "version": "1.0.0",
+    "license": "MIT",
+    "notices": []
+  },
+  {
+    "name": "bmp-js",
+    "version": "0.1.0",
+    "license": "MIT",
+    "notices": [
+      "bmp-js-0.1.0-LICENSE"
+    ]
+  },
+  {
+    "name": "idb-keyval",
+    "version": "6.3.0",
+    "license": "Apache-2.0",
+    "notices": [
+      "idb-keyval-6.3.0-LICENCE"
+    ]
+  },
+  {
+    "name": "is-url",
+    "version": "1.2.4",
+    "license": "MIT",
+    "notices": []
+  },
+  {
+    "name": "node-fetch",
+    "version": "2.7.0",
+    "license": "MIT",
+    "notices": [
+      "node-fetch-2.7.0-LICENSE.md"
+    ]
+  },
+  {
+    "name": "opencollective-postinstall",
+    "version": "2.0.3",
+    "license": "MIT",
+    "notices": [
+      "opencollective-postinstall-2.0.3-LICENSE"
+    ]
+  },
+  {
+    "name": "regenerator-runtime",
+    "version": "0.13.11",
+    "license": "MIT",
+    "notices": [
+      "regenerator-runtime-0.13.11-LICENSE"
+    ]
+  },
+  {
+    "name": "tesseract.js",
+    "version": "7.0.0",
+    "license": "Apache-2.0",
+    "notices": [
+      "tesseract.js-7.0.0-LICENSE.md"
+    ]
+  },
+  {
+    "name": "tesseract.js-core",
+    "version": "7.0.0",
+    "license": "Apache-2.0",
+    "notices": [
+      "tesseract.js-core-7.0.0-LICENSE"
+    ]
+  },
+  {
+    "name": "tr46",
+    "version": "0.0.3",
+    "license": "MIT",
+    "notices": []
+  },
+  {
+    "name": "wasm-feature-detect",
+    "version": "1.9.0",
+    "license": "Apache-2.0",
+    "notices": [
+      "wasm-feature-detect-1.9.0-LICENSE"
+    ]
+  },
+  {
+    "name": "webidl-conversions",
+    "version": "3.0.1",
+    "license": "BSD-2-Clause",
+    "notices": [
+      "webidl-conversions-3.0.1-LICENSE.md"
+    ]
+  },
+  {
+    "name": "whatwg-url",
+    "version": "5.0.0",
+    "license": "MIT",
+    "notices": [
+      "whatwg-url-5.0.0-LICENSE.txt"
+    ]
+  },
+  {
+    "name": "zlibjs",
+    "version": "0.3.1",
+    "license": "MIT",
+    "notices": [
+      "zlibjs-0.3.1-LICENSE"
+    ]
+  }
+]
