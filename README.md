@@ -8,7 +8,7 @@ Windows 离线屏幕取词与英汉查词工具。
 
 [下载 v1.0 Windows x64 版](https://github.com/sliuhaob/screen-word/releases/tag/v1.0)
 
-运行 `screen-word-v1.0-windows-x64.exe` 即可使用，词库和识别模型已内置。
+下载 `screen-word-v1.0-windows-x64.zip`，解压后运行其中的 `screen-word-v1.0-windows-x64.exe`。词库和识别模型已内置。
 
 ## 使用
 

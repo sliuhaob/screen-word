@@ -6,6 +6,7 @@ qa-fixtures/
 settings-test-*/
 native/*.exe
 /*.exe
+/*.zip
 /*.png
 /*.log
 /*-test-result.json
